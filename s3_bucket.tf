@@ -6,10 +6,6 @@ resource "aws_s3_bucket" "statefilesfortest" {
   acl = "private"
   
    versioning {
-    enabled = var.versioning
+    enabled = true
   }
-  
-  tags = {
-  Name	= "Mybucket"
-}
 }
