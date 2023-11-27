@@ -1,7 +1,7 @@
 provider "aws" {
 	region = "us-east-2"
 }
-resource "aws_s3_bucket" "my-s3-bucket" {
+resource "aws_s3_bucket" "statefilesfortest" {
   bucket = "statefilesfortest"
   acl = "private"
   
